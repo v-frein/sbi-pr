@@ -74,14 +74,14 @@ const Municipality: NextPage = () => {
                 <TabPanel></TabPanel>
                 <TabPanel></TabPanel>
                 <TabPanel>
-                  <Script
-                    type="text/javascript"
-                    src="//ru.tripaggregator.com/widget/5158/frame/js"
-                  ></Script>
                   <div
                     id="box_tripaggregator5158"
                     style={{ height: "400px" }}
                   ></div>
+                  <Script
+                    type="text/javascript"
+                    src="//ru.tripaggregator.com/widget/5158/frame/js"
+                  ></Script>
                 </TabPanel>
                 <TabPanel></TabPanel>
               </TabPanels>

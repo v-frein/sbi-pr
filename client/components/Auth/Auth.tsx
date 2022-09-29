@@ -31,23 +31,23 @@ export const Auth: FC = () => {
           {
             id: 3,
             login: "rogacheva",
-            password: "kos7397948",
+            password: "kiy7397948",
             isLogged: false,
           },
-          { id: 4, login: "zaparin", password: "kur2803545", isLogged: false },
+          { id: 4, login: "zaparin", password: "kbv2803545", isLogged: false },
           {
             id: 5,
             login: "kondakova",
-            password: "tul6318591",
+            password: "trv6318591",
             isLogged: false,
           },
           {
             id: 6,
             login: "vasilieva",
-            password: "orl3526478",
+            password: "olt3526478",
             isLogged: false,
           },
-          { id: 7, login: "loboda", password: "smo7848764", isLogged: false },
+          { id: 7, login: "loboda", password: "sbk7848764", isLogged: false },
         ])
       );
     } else if (
