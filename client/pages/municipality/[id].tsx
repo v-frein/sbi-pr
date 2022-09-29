@@ -74,10 +74,7 @@ const Municipality: NextPage = () => {
                     id="box_tripaggregator5158"
                     style="height: 400px"
                   ></div>
-                  <script
-                    type="text/javascript"
-                    src="//ru.tripaggregator.com/widget/5158/frame/js"
-                  ></script>
+                  <script src="//ru.tripaggregator.com/frame/aggjs?widget_id=5158"></script>
                   `
                   );
                 }
