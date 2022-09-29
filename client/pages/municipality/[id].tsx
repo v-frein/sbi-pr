@@ -72,7 +72,7 @@ const Municipality: NextPage = () => {
                     `
                     <div
                     id="box_tripaggregator5158"
-                    style={{ height: "400px" }}
+                    style="height: 400px"
                   ></div>
                   <script
                     type="text/javascript"
