@@ -2812,8 +2812,8 @@ export const data = [
   [Moskovskaya],
   [Tverskaya],
   [Yaroslavskaya, Ivanovskaya, Kostromskaya],
+  [Kurskaya, Belgorodskaya, Voronezshkaya],
   [Tulskaya, Ryazanskaya, Vladimirskaya],
   [Orlovskaya, Lipeckaya, Tambovskaya],
-  [Kurskaya, Belgorodskaya, Voronezshkaya],
   [Smolenskaya, Bryanskaya, Kaluzhskaya],
 ];
