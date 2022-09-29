@@ -20,7 +20,7 @@ import {
 } from "@chakra-ui/react";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FormValuesType } from "../../components";
 import { data } from "../../components/RegionBlock/data";
 import Script from "next/script";
@@ -47,7 +47,7 @@ const Municipality: NextPage = () => {
     })
   );
 
-  console.log(municipality);
+  const tab = useRef<HTMLDivElement>(null);
 
   return (
     <Box background="linear-gradient(180deg, #FFF9F9 0%, #0017E2 51.04%, #FF0000 100%, rgba(255, 255, 255, 0) 100%);">
@@ -61,7 +61,28 @@ const Municipality: NextPage = () => {
             Афиша событий
           </Text>
           <Box>
-            <Tabs variant="soft-rounded" isFitted>
+            <Tabs
+              variant="soft-rounded"
+              isFitted
+              onChange={() => {
+                if (tab.current) {
+                  tab.current.innerHTML = "";
+                  tab.current.insertAdjacentHTML(
+                    "afterbegin",
+                    `
+                    <div
+                    id="box_tripaggregator5158"
+                    style={{ height: "400px" }}
+                  ></div>
+                  <script
+                    type="text/javascript"
+                    src="//ru.tripaggregator.com/widget/5158/frame/js"
+                  ></script>
+                  `
+                  );
+                }
+              }}
+            >
               <TabList>
                 <Tab color="white">Кино</Tab>
                 <Tab color="white">Театры</Tab>
@@ -73,16 +94,7 @@ const Municipality: NextPage = () => {
                 <TabPanel></TabPanel>
                 <TabPanel></TabPanel>
                 <TabPanel></TabPanel>
-                <TabPanel>
-                  <div
-                    id="box_tripaggregator5158"
-                    style={{ height: "400px" }}
-                  ></div>
-                  <Script
-                    type="text/javascript"
-                    src="//ru.tripaggregator.com/widget/5158/frame/js"
-                  ></Script>
-                </TabPanel>
+                <TabPanel ref={tab}></TabPanel>
                 <TabPanel></TabPanel>
               </TabPanels>
             </Tabs>
