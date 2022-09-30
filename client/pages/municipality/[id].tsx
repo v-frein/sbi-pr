@@ -21,18 +21,13 @@ import {
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
-import { FormValuesType } from "../../components";
+import { FormValuesType, Municipality, Region } from "../../components";
 import { data } from "../../components/RegionBlock/data";
 import Script from "next/script";
 import Image from "next/image";
 
 const Municipality: NextPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [id, setId] = useState(0);
-  useEffect(() => {
-    const accounts = JSON.parse(localStorage.getItem("secret") || "");
-    setId(accounts.find((account: FormValuesType) => account.isLogged).id);
-  }, []);
 
   const {
     query: { id: idMunicipality },
@@ -40,10 +35,17 @@ const Municipality: NextPage = () => {
 
   let munic;
 
-  const municipality = data[id].find((region) =>
-    region.municipalities.find((municipality) => {
-      munic = municipality.name;
-      return municipality.id === idMunicipality;
+  let regionName;
+
+  console.log(regionName);
+
+  data.find((regions) =>
+    regions.find((region: Region) => {
+      regionName = region.name;
+      return region.municipalities.find((municipality: Municipality) => {
+        munic = municipality.name;
+        return municipality.id === idMunicipality;
+      });
     })
   );
 
@@ -54,7 +56,7 @@ const Municipality: NextPage = () => {
       <Center>
         <Box w="1024px">
           <Text fontSize="42px" fontWeight="bold" textAlign="center">
-            {municipality?.name + "/" + munic}
+            {regionName + "/" + munic}
           </Text>
           <Image src="/images/pushkinCard.jpeg" width="1024px" height="600px" />
           <Text my="18px" fontSize="46px" fontWeight="bold" textAlign="center">
