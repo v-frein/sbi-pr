@@ -31,7 +31,8 @@ const Municipality: NextPage = () => {
   const [isGeneral, setGeneral] = useState(0);
 
   const {
-    query: { id: idMunicipality, fgw },
+    query: { id: idMunicipality, page },
+    push,
   } = useRouter();
 
   let munic;
@@ -51,8 +52,8 @@ const Municipality: NextPage = () => {
   const tab = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (fgw) setGeneral(3);
-  }, [fgw]);
+    if (page) setGeneral(Number(page));
+  }, [page]);
 
   useEffect(() => {
     if (tab.current) {
@@ -94,11 +95,21 @@ const Municipality: NextPage = () => {
           </Text>
           <Box>
             <Tabs
-              {...{ index: isGeneral || undefined }}
+              index={isGeneral}
               variant="soft-rounded"
               isFitted
-              onChange={() => {
-                setGeneral(0);
+              onChange={(index) => {
+                push(
+                  {
+                    query: {
+                      id: idMunicipality,
+                      page: index,
+                    },
+                  },
+                  undefined,
+                  { shallow: true }
+                );
+                setGeneral(index);
                 if (tab.current) {
                   tab.current.innerHTML = "";
                   tab.current.insertAdjacentHTML(
