@@ -72,11 +72,23 @@ const Municipality: NextPage = () => {
                     `
                     <div
                     id="box_tripaggregator5158"
-                    style="height: 400px"
-                  ></div>
-                  <script src="//ru.tripaggregator.com/frame/aggjs?widget_id=5158"></script>
-                  `
+                    style="height: 400px;"
+                  ></div>`
                   );
+
+                  const jq = document.createElement("script");
+                  jq.src = "https://code.jquery.com/jquery-2.2.4.js";
+                  document.head.appendChild(jq);
+
+                  const ss = document.createElement("link");
+                  ss.rel = "stylesheet";
+                  ss.href = "https://ru.tripaggregator.com/css/widget.css";
+                  document.head.appendChild(ss);
+
+                  const script = document.createElement("script");
+                  script.src =
+                    "https://ru.tripaggregator.com/frame/aggjs?widget_id=5158";
+                  document.head.appendChild(script);
                 }
               }}
             >
