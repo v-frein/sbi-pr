@@ -8,7 +8,11 @@ import {
 import Link from "next/link";
 import { FC } from "react";
 
-export const Navigation: FC = () => {
+interface NavigationProps {
+  balance: number;
+}
+
+export const Navigation: FC<NavigationProps> = ({balance}) => {
   const onExit = () => {
     localStorage.clear();
   };
@@ -19,6 +23,7 @@ export const Navigation: FC = () => {
           <Text color="white" fontSize="32px" fontWeight="bold">
             SBI
           </Text>
+          
           <HStack gap="24px">
             <Link href="/regions" color="white">
               <Chakralink color="white" fontWeight="bold">

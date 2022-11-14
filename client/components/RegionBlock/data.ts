@@ -382,89 +382,60 @@ export const Kaluzhskaya = {
     },
     {
       id: "74",
-      name: "Курский район",
+      name: "Медынский район",
       eventsIds: [],
     },
     {
       id: "75",
-      name: "Курчатовский район",
+      name: "Мещовский район",
       eventsIds: [],
     },
     {
       id: "76",
-      name: "Льговский район",
+      name: "Мосальский район",
       eventsIds: [],
     },
     {
       id: "77",
-      name: "Мантуровский район",
+      name: "Перемышльский район",
       eventsIds: [],
     },
     {
       id: "78",
-      name: "Медвенский район",
+      name: "Спас-деменский район",
       eventsIds: [],
     },
     {
       id: "79",
-      name: "Обоянский район",
+      name: "Сухинический район",
       eventsIds: [],
     },
     {
       id: "80",
-      name: "Октябрьский район",
+      name: "Тарусский район",
       eventsIds: [],
     },
     {
       id: "81",
-      name: "Поныровский район",
+      name: "Ульяновский район",
       eventsIds: [],
     },
     {
       id: "82",
-      name: "Пристенский район",
+      name: "Ферзиковский район",
       eventsIds: [],
     },
     {
       id: "83",
-      name: "Рыльский район",
+      name: "Хвастовический район",
       eventsIds: [],
     },
     {
       id: "84",
-      name: "Советский район",
+      name: "Юхновский район",
       eventsIds: [],
     },
-    {
-      id: "85",
-      name: "Солнцевский район",
-      eventsIds: [],
-    },
-    {
-      id: "86",
-      name: "Суджанский район",
-      eventsIds: [],
-    },
-    {
-      id: "87",
-      name: "Фатежский район",
-      eventsIds: [],
-    },
-    {
-      id: "88",
-      name: "Хомутовский район",
-      eventsIds: [],
-    },
-    {
-      id: "89",
-      name: "Черемисиновский район",
-      eventsIds: [],
-    },
-    {
-      id: "90",
-      name: "Щигровский район",
-      eventsIds: [],
-    },
+   
   ],
 };
 
@@ -2817,3 +2788,5 @@ export const data = [
   [Orlovskaya, Lipeckaya, Tambovskaya],
   [Smolenskaya, Bryanskaya, Kaluzhskaya],
 ];
+
+export const referralData = [Tverskaya.municipalities, Kaluzhskaya.municipalities]
