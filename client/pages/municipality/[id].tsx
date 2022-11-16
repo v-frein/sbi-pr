@@ -138,11 +138,11 @@ const Municipality: NextPage = () => {
               }}
             >
               <TabList >
-                <Tab color="white" fontSize="14px">Кино</Tab>
-                <Tab color="white" fontSize="14px">Театры</Tab>
-                <Tab color="white" fontSize="14px">Концерты</Tab>
-                <Tab color="white" fontSize="14px">Экскурсии</Tab>
-                <Tab color="white" fontSize="14px">Встречи</Tab>
+                <Tab color="white" fontSize="12px">Кино</Tab>
+                <Tab color="white" fontSize="12px">Театры</Tab>
+                <Tab color="white" fontSize="12px">Концерты</Tab>
+                <Tab color="white" fontSize="12px">Экскурсии</Tab>
+                <Tab color="white" fontSize="12px">Встречи</Tab>
               </TabList>
               <TabPanels>
                 <TabPanel></TabPanel>
