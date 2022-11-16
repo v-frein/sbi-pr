@@ -137,12 +137,12 @@ const Municipality: NextPage = () => {
                 }
               }}
             >
-              <TabList>
-                <Tab color="white">Кино</Tab>
-                <Tab color="white">Театры</Tab>
-                <Tab color="white">Концерты</Tab>
-                <Tab color="white">Экскурсии</Tab>
-                <Tab color="white">Встречи</Tab>
+              <TabList >
+                <Tab color="white" fontSize="14px">Кино</Tab>
+                <Tab color="white" fontSize="14px">Театры</Tab>
+                <Tab color="white" fontSize="14px">Концерты</Tab>
+                <Tab color="white" fontSize="14px">Экскурсии</Tab>
+                <Tab color="white" fontSize="14px">Встречи</Tab>
               </TabList>
               <TabPanels>
                 <TabPanel></TabPanel>
