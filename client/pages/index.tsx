@@ -34,7 +34,7 @@ const Home: NextPage = () => {
             {'"Плафторма роста"'}
           </Text>
         </Box>
-        <Text w="640px" fontSize="18px" color="white" textAlign="left">
+        <Text maxW="640px" fontSize="18px" color="white" textAlign="left">
           При поддержке:
           <br />
           1. {'"ДОСААФ"'} России

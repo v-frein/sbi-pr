@@ -155,7 +155,7 @@ const Municipality: NextPage = () => {
             <Center>
               <Button
                 my="18px"
-                fontSize="24px"
+                fontSize="14px"
                 fontWeight="bold"
                 textAlign="center"
                 colorScheme="blue"
