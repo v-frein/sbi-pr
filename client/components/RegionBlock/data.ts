@@ -2225,27 +2225,17 @@ export const Tverskaya = {
       eventsIds: [],
     },
     {
+      id: "wefwefcewf",
+      name: "Бежецкий район",
+      eventsIds: [],
+    },
+    {
       id: "54vyc",
       name: "Бельский район",
       eventsIds: [],
     },
     {
       id: "sdfwfecew",
-      name: "Бологовский район",
-      eventsIds: [],
-    },
-    {
-      id: "wefwefcewf",
-      name: "Бежецкий район",
-      eventsIds: [],
-    },
-    {
-      id: "dsfgcsgwca",
-      name: "Бельский район",
-      eventsIds: [],
-    },
-    {
-      id: "cargarecaer",
       name: "Бологовский район",
       eventsIds: [],
     },

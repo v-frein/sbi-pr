@@ -14,7 +14,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FormValuesType, Navigation, RegionBlock } from "../../components";
 import { StatisticsBlock } from "../../components";
-import { data, referralData } from "../../components/RegionBlock/data";
+import { data, referralData, Tverskaya } from "../../components/RegionBlock/data";
 
 const Regions: NextPage = () => {
   const [account, setAccount] = useState<FormValuesType>({});
@@ -22,6 +22,8 @@ const Regions: NextPage = () => {
     const accounts = JSON.parse(localStorage.getItem("secret") || "");
     setAccount(accounts.find((account: FormValuesType) => account.isLogged));
   }, []);
+
+  console.log(Tverskaya.municipalities.length)
 
   return (
     <Box
