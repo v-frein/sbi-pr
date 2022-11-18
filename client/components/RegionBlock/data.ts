@@ -2779,4 +2779,4 @@ export const data = [
   [Smolenskaya, Bryanskaya, Kaluzhskaya],
 ];
 
-export const referralData = [Tverskaya.municipalities, Kaluzhskaya.municipalities]
+export const referralData = [Tverskaya.municipalities, Kaluzhskaya.municipalities, Yaroslavskaya.municipalities]

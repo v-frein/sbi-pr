@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             textAlign="center"
             textTransform="uppercase"
           >
-            {'"Плафторма роста"'}
+            {'"Платформа роста"'}
           </Text>
         </Box>
         <Text maxW="640px" fontSize="18px" color="white" textAlign="left">
