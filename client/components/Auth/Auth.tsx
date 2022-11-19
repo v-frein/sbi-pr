@@ -1,4 +1,4 @@
-import { Box, Button, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Link, Text, VStack } from "@chakra-ui/react";
 import { FC, useEffect } from "react";
 import {
   Formik,
@@ -2006,6 +2006,10 @@ export const Auth: FC = () => {
             <Button type="submit" colorScheme="blue">
               Войти
             </Button>
+            <Link color="gray.400" onClick={() => {
+              localStorage.clear()
+              location.reload()
+            }}>Нажмите если не можете войти</Link>
           </VStack>
         </Form>
       </Formik>
