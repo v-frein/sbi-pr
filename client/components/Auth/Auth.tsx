@@ -2006,10 +2006,10 @@ export const Auth: FC = () => {
             <Button type="submit" colorScheme="blue">
               Войти
             </Button>
-            <Link color="gray.400" onClick={() => {
+            <Link textAlign="center" color="gray.400" onClick={() => {
               localStorage.clear()
               location.reload()
-            }}>Нажмите если не можете войти</Link>
+            }}>Нажмите если не можете войти и введите данные повторно</Link>
           </VStack>
         </Form>
       </Formik>
