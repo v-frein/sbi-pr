@@ -435,7 +435,6 @@ export const Kaluzhskaya = {
       name: "Юхновский район",
       eventsIds: [],
     },
-   
   ],
 };
 
@@ -2779,4 +2778,12 @@ export const data = [
   [Smolenskaya, Bryanskaya, Kaluzhskaya],
 ];
 
-export const referralData = [Tverskaya.municipalities, Kaluzhskaya.municipalities, Yaroslavskaya.municipalities]
+export const referralData = [
+  Tverskaya.municipalities,
+  Kaluzhskaya.municipalities,
+  Yaroslavskaya.municipalities,
+  Kurskaya.municipalities,
+  Orlovskaya.municipalities,
+  Tulskaya.municipalities,
+  Ryazanskaya.municipalities
+];
