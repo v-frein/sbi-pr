@@ -2785,5 +2785,16 @@ export const referralData = [
   Kurskaya.municipalities,
   Orlovskaya.municipalities,
   Tulskaya.municipalities,
-  Ryazanskaya.municipalities
+  Ryazanskaya.municipalities,
+  Tambovskaya.municipalities,
+  Kostromskaya.municipalities,
+  Vladimirskaya.municipalities,
+  Voronezshkaya.municipalities,
+  Ivanovskaya.municipalities,
+  Lipeckaya.municipalities,
+  Smolenskaya.municipalities,
+  Belgorodskaya.municipalities,
+  Bryanskaya.municipalities,
+  Moskovskaya.municipalities
+  
 ];
