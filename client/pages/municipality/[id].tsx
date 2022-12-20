@@ -187,7 +187,7 @@ const Municipality: NextPage = () => {
               fontWeight="bold"
               textAlign="center"
             >
-              Горячая линия: 8 800 555 35 35
+              Горячая линия: -
             </Text>
           </Box>
         </Box>
